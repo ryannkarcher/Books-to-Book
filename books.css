@@ -1,0 +1,32 @@
+/* MAKE THE BACKGROUND #808080 */
+/* body {
+   background-image: linear-gradient(to bottom,
+      #ffffff 0%,
+      #ffffff 50%,
+      #808080 50%,
+      #808080 100%,
+      ); }*/
+
+#mpcWinners {
+   margin-top: auto;
+   margin-bottom: auto;
+}
+
+/* #disp5 {
+   font-size: 2rem
+      USED H1 INSTEAD FOR NOW
+} */
+
+table, th {
+   width: auto !important;
+}
+
+/* #whiteNo: hover {
+   color: white;
+      HOW DO I MAKE IT SO THE HOVER IS TURNED OFF; HOME PAGE
+} */
+
+#pcLogo {
+   height: 8rem;
+   padding-right: -20rem;
+}

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books to Book</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="books.css"/>
+</head>
+<body>
+  
+<!-- NAVIGATION -->
+  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Books to Book</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="recommendations.html" role="button" aria-haspopup="true" aria-expanded="false">Recommendations</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Classic Literature</a>
+              <a class="dropdown-item" href="#">Fantasy</a>
+              <a class="dropdown-item" href="#">History</a>
+              <a class="dropdown-item" href="#">Horror</a>
+              <a class="dropdown-item" href="#">Mystery</a>
+              <a class="dropdown-item" href="#">Nonfiction</a>
+              <a class="dropdown-item" href="#">Romance</a>
+              <a class="dropdown-item" href="#">Science Fiction</a>
+              <a class="dropdown-item" href="#">Thriller</a>
+              <a class="dropdown-item" href="#">Young Adult Fiction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="localWriters.html">Local Writers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="publishers.html">Publishers</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- NEW ADDITIONS-->
+  <div class="container-fluid text-center">
+    <div class="row">
+      <div class="col text-center">
+        <h1>Check out our newest additions!!</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <img src="#" alt="book1"/>
+        <h1>Book 1</h1>
+      </div>
+      <div class="col">
+        <img src="#" alt="book2"/>
+        <h1>Book 2</h1>
+      </div>
+      <div class="col">
+        <img src="#" alt="book3"/>
+        <h1>Book 3</h1>
+      </div>
+    </div>
+  </div>
+
+<!-- MONTHLY PROMPT WINNERS -->
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h1>Monthly Prompt Challenge</h1>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <div class="card mb-3 col-lg-4">
+        <h6 class="card-header fs-1">September Winner!</h6>
+        <div class="card-body">
+          <h5 class="card-title fs-3">Models on the Mountain</h5>
+          <h6 class="card-subtitle text-muted">Jared Houndsman</h6>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
+          <rect width="100%" height="100%" fill="#868e96"></rect>
+          <img class="card-img-top" src="#" alt="winner cover">
+        </svg>
+        <div class="card-body">
+          <p class="card-text">based on prompt: idk what the prompt is; story about stuff </p>
+        </div>
+      </div>
+      <div class="card text-white bg-dark mx-3 my-3 col-sm-6 col-lg-6" style="max-width: 19rem; max-height: 30rem;">
+        <div class="card-header fs-5 text-center">Vote on your favorite story <br> and submit your own!</div>
+        <div class="card-body">
+          <p class="card-text">Every month, write up to 7,500 words to get a chance to win $100 and be featured on our page! Then read other submissions and vote on your favorite.</p>
+          <a href="#" class="btn btn-primary">Submit Here!</a>
+          <a href="#" class="btn btn-primary">Vote Here!</a>
+        </div>
+      </div>
+      <div id="mpcWinners" class="card text-white bg-dark mr-3 col-sm-5 col-lg-6" class="card text-white bg-dark mr-3 col-sm-5 col-lg-6" style="max-width: 12rem; max-height: 10rem;">
+        <div class="card-header fs-5 text-center">See our previous <br> MPC winners!</div>
+        <div class="card-body">
+          <a href="#" class="btn btn-primary">Take me there!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- EVENTS -->
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h1>Upcoming Events</h1>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <div class="col" style="max-width: 50rem;">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Challenge</th>
+              <th scope="col" style="max-width: 5rem;">Description</th>
+              <th scope="col">Status</th>
+              <th scope="col">Due Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-light">
+              <td scope="row"><a src="#">October Prompt Challenge</a></td>
+              <td>This challenge is to write up to 7,500 words in response to this month's prompt If you choose to enter it, you may win $100!</td>
+              <td>Open</td>
+              <td>Oct 25, 2023</td>
+            </tr>
+            <tr class="table-light">
+              <td scope="row"><a src="#">NaNoWriMo</a></td>
+              <td>Use the tools, structure, community, and encouragement NaNoWriMo provides to write your own novel! Keep track of your progress and share your novel with our community.</td>
+              <td>Open</td>
+              <td></td>
+            </tr>
+            <tr class="table-light">
+              <td scope="row"><a src="#"></a>super duper challenge</td>
+              <td>just do your best</td>
+              <td>Open</td>
+              <td>never</td>
+            </tr>
+            <tr class="table-light">
+              <td scope="row"><a src="#"></a></td>
+              <td>More challenges await you...</td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+<!-- PUBLISHERS -->
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h1>Featured Publishers</h1>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-5">
+    <!-- FUN BLOCKS -->
+        <div class="list-group">
+          <div class="list-group-item list-group-item-action flex-column align-items-start active">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Publishing Company</h5>
+            </div>
+            <div class="col mb-1">
+              Publishing Company started in 2020 as a husband and wife with dreams. so many dreams. 
+              surprisingly, their company didn't die in covid. if you're looking for a personable, flexible,
+              and thorough publishing company, these are your peeps! contact them below to get a 
+              free quote.
+            </div>
+          </div>
+          <div class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 mt-3">Contact Information</h5>
+            </div>
+            <div class="row">
+              <div class="col mb-1">
+                Phone: (123)-456-7890 <br>
+                Email: publishingcompany@gmail.com <br>
+                Address: 123 Cool St, Awesome, ST <br>
+                Names: Bran and Christy Rogers
+              </div>
+              <div class="col">
+                <img id="pcLogo" src="images/publishingCompany.png" alt="Publishing Company logo">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- QUOTES -->
+      <div class="col">
+        <figure>
+          <blockquote class="blockquote">
+            <p class="mt-2">"They were so helpful etc etc awesome loved it great!"</p>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            A happy author <cite title="Source Title">Jerry Smith</cite>
+          </figcaption>
+        </figure>
+        <figure>
+          <blockquote class="blockquote">
+            <p class="mt-2">"quick, easy, cheap but high quality!!"</p>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            Another happy author <cite title="Source Title">Sharal justify-content-between</cite>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+<!-- SIGN UP -->
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h1>Sign up for emails!</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p>Want to be notified for challenges, special deals, and book recommendations? Fill out the form below!</p>
+        <form>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</html>
+<!-- DELETE BOOTSTRAP.MIN.CSS -->
+<!-- JUST REDO THE PAGE AND COPY PASTE AND SEE HOW IT GOES -->
+<!-- ID="namethingy" -->
