@@ -1,15 +1,27 @@
 /* MAKE THE BACKGROUND #808080 */
-/* body {
+/* html {
    background-image: linear-gradient(to bottom,
       #ffffff 0%,
       #ffffff 50%,
       #808080 50%,
       #808080 100%,
-      ); }*/
+      ); } */
 
-#mpcWinners {
-   margin-top: auto;
-   margin-bottom: auto;
+/* ADDITIONS */
+#small-img {
+   width: 150px;
+   padding: 1px;
+   border: 4px solid #333333;
+   border-radius: 15px;
+}
+
+#closeText {
+   margin-top: -20px;
+}
+
+#mpcWinnerImg {
+   width: 300px;
+   border-radius: 3px;
 }
 
 /* #disp5 {
@@ -21,10 +33,12 @@ table, th {
    width: auto !important;
 }
 
-/* #whiteNo: hover {
-   color: white;
-      HOW DO I MAKE IT SO THE HOVER IS TURNED OFF; HOME PAGE
-} */
+
+/* PUBLISHING */
+#bg-white {
+   background-color: white;
+   color: black;
+}
 
 #pcLogo {
    height: 8rem;

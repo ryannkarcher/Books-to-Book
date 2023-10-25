@@ -12,17 +12,17 @@
 <!-- NAVIGATION -->
   <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Books to Book</a>
+      <a class="navbar-brand" href="index.html">Books to Book</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarColor01">
         <ul class="navbar-nav me-auto">
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link active" href="index.html">Home
               <span class="visually-hidden">(current)</span>
             </a>
-          </li>
+          </li> -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="recommendations.html" role="button" aria-haspopup="true" aria-expanded="false">Recommendations</a>
             <div class="dropdown-menu">
@@ -38,10 +38,10 @@
               <a class="dropdown-item" href="#">Young Adult Fiction</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="events.html">Events</a>
+            <a class="nav-link" href="localWriters.html">Local Writers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="localWriters.html">Local Writers</a>
+            <a class="nav-link" href="events.html">Events and Challenges</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="publishers.html">Publishers</a>
@@ -54,70 +54,90 @@
 <!-- NEW ADDITIONS-->
   <div class="container-fluid text-center">
     <div class="row">
-      <div class="col text-center">
+      <div class="col my-2 text-center"><br>
         <h1>Check out our newest additions!!</h1>
       </div>
     </div>
     <div class="row">
       <div class="col">
-        <img src="#" alt="book1"/>
-        <h1>Book 1</h1>
+        <img id="small-img" src="images/headFullofGhosts.jpg" alt="cover depicting a sidways staircase"/>
+        <p class="fs-5">A Head Full of Ghosts</p>
+        <p id="closeText" class="text-muted">Paul Tremblay</p>
       </div>
       <div class="col">
-        <img src="#" alt="book2"/>
-        <h1>Book 2</h1>
+        <img id="small-img" src="images/treesCreptIn.jpeg" alt="cover depicting a girl in a white dress falling through trees"/>
+        <p class="fs-5">And the Trees Crept In</p>
+        <p id="closeText" class="text-muted">Dawn Kurtagich</p>
       </div>
       <div class="col">
-        <img src="#" alt="book3"/>
-        <h1>Book 3</h1>
+        <img id="small-img" src="images/thegrove.jpg" alt="cover depicting orange background and black trees"/>
+        <p class="fs-5">The Grove</p>
+        <p id="closeText" class="text-muted">John Rector</p>
       </div>
+      <div class="col">
+        <img id="small-img" src="images/ifYouTell.jpg" alt="cover depicting foggy city by the ocean"/>
+        <p class="fs-5">If You Tell</p>
+        <p id="closeText" class="text-muted">Gregg Olsen</p>
+      </div>
+        <div class="col">
+          <img id="small-img" src="images/chasingTheDead.jpeg" alt="cover depicting dark road lit up by orange headlights"/>
+          <p class="fs-5">Chasing the Dead</p>
+          <p id="closeText" class="text-muted">Joe Schreiber</p>
+        </div>
+        <div class="col">
+          <img id="small-img" src="images/theShining.jpg" alt="cover depicting broken door"/>
+          <p class="fs-5">The Shining</p>
+          <p id="closeText" class="text-muted">Stephen King</p>
+        </div>
     </div>
   </div>
 
 <!-- MONTHLY PROMPT WINNERS -->
   <div class="container">
     <div class="row">
-      <div class="col text-center">
+      <div class="col text-center"><br><br>
         <h1>Monthly Prompt Challenge</h1>
       </div>
     </div>
     <div class="row d-flex justify-content-center">
-      <div class="card mb-3 col-lg-4">
-        <h6 class="card-header fs-1">September Winner!</h6>
-        <div class="card-body">
-          <h5 class="card-title fs-3">Models on the Mountain</h5>
-          <h6 class="card-subtitle text-muted">Jared Houndsman</h6>
+      <div class="card mb-3 col-lg-6 bg-dark text-white">
+        <h6 class="card-header fs-1 text-center">September Winner!</h6>
+        <div class="col d-flex justify-content-center mt-3">
+          <img id="mpcWinnerImg" class="card-img-top" src="images/murderMountain.png" alt="cover depicting plains leading up to a mountain">
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
-          <rect width="100%" height="100%" fill="#868e96"></rect>
-          <img class="card-img-top" src="#" alt="winner cover">
-        </svg>
         <div class="card-body">
-          <p class="card-text">based on prompt: idk what the prompt is; story about stuff </p>
+          <h5 class="card-title fs-3">Murders on the Mountain</h5>
+          <h6 class="card-subtitle text-white">Jared Houndsman</h6>
         </div>
-      </div>
-      <div class="card text-white bg-dark mx-3 my-3 col-sm-6 col-lg-6" style="max-width: 19rem; max-height: 30rem;">
-        <div class="card-header fs-5 text-center">Vote on your favorite story <br> and submit your own!</div>
-        <div class="card-body">
-          <p class="card-text">Every month, write up to 7,500 words to get a chance to win $100 and be featured on our page! Then read other submissions and vote on your favorite.</p>
-          <a href="#" class="btn btn-primary">Submit Here!</a>
-          <a href="#" class="btn btn-primary">Vote Here!</a>
+        <div id="closeText" class="card-body">
+          <p>Jared Houndsman won the September Prompt Challenge by answering this prompt: <i>Write a story where the character has periodic blackouts for seemingly no reason.</i> Check out his story!</p>
+          <p class="card-text">Catherine Williams ventures into the mountains she grew up in for her annual camping trip... only to find cougar carcasses in her campsite with unnatural scratches trailing to the river. <i>What could have done this?</i></p>
         </div>
       </div>
-      <div id="mpcWinners" class="card text-white bg-dark mr-3 col-sm-5 col-lg-6" class="card text-white bg-dark mr-3 col-sm-5 col-lg-6" style="max-width: 12rem; max-height: 10rem;">
-        <div class="card-header fs-5 text-center">See our previous <br> MPC winners!</div>
-        <div class="card-body">
-          <a href="#" class="btn btn-primary">Take me there!</a>
+      <div class="col-lg-3 my-auto">
+        <div class="card text-white bg-dark mb-3 mx-auto col-sm-7" style="max-width: 25rem; max-height: 30rem;">
+          <div class="card-header fs-5 text-center">Vote on your favorite story <br> and submit your own!</div>
+          <div class="card-body">
+            <p class="card-text">Every month, write up to 7,500 words to get a chance to win $100 and be featured on our page! Then read other submissions and vote on your favorite.</p>
+            <a href="#" class="btn btn-primary">Submit Here!</a>
+            <a href="#" class="btn btn-primary">Vote Here!</a>
+          </div>
+        </div>
+        <div class="card text-white bg-dark col mx-auto" style="max-width: 12rem; max-height: 10rem;">
+          <div class="card-header fs-5 text-center">See our previous <br> MPC winners!</div>
+          <div class="card-body">
+            <a href="#" class="btn btn-primary">Take me there!</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-<!-- EVENTS -->
+<!-- UPCOMING EVENTS -->
   <div class="container">
     <div class="row">
-      <div class="col text-center">
-        <h1>Upcoming Events</h1>
+      <div class="col text-center mt-5">
+        <h1>Upcoming Events and Challenges</h1>
       </div>
     </div>
     <div class="row d-flex justify-content-center">
@@ -165,7 +185,7 @@
 <!-- PUBLISHERS -->
   <div class="container">
     <div class="row">
-      <div class="col text-center">
+      <div class="col text-center mt-5">
         <h1>Featured Publishers</h1>
       </div>
     </div>
@@ -177,14 +197,14 @@
             <div class="d-flex w-100 justify-content-between">
               <h5 class="mb-1">Publishing Company</h5>
             </div>
-            <div class="col mb-1">
+            <div class="mb-1">
               Publishing Company started in 2020 as a husband and wife with dreams. so many dreams. 
               surprisingly, their company didn't die in covid. if you're looking for a personable, flexible,
               and thorough publishing company, these are your peeps! contact them below to get a 
               free quote.
             </div>
           </div>
-          <div class="list-group-item list-group-item-action flex-column align-items-start">
+          <div id="bg-white" class="list-group-item list-group-item-action flex-column align-items-star active">
             <div class="d-flex w-100 justify-content-between">
               <h5 class="mb-1 mt-3">Contact Information</h5>
             </div>
@@ -203,7 +223,7 @@
         </div>
       </div>
   <!-- QUOTES -->
-      <div class="col">
+      <div class="col-lg-4 my-auto">
         <figure>
           <blockquote class="blockquote">
             <p class="mt-2">"They were so helpful etc etc awesome loved it great!"</p>
@@ -217,7 +237,15 @@
             <p class="mt-2">"quick, easy, cheap but high quality!!"</p>
           </blockquote>
           <figcaption class="blockquote-footer">
-            Another happy author <cite title="Source Title">Sharal justify-content-between</cite>
+            Another happy author <cite title="Source Title">Sharal Calihan</cite>
+          </figcaption>
+        </figure>
+        <figure>
+          <blockquote class="blockquote">
+            <p class="mt-2">"They're so cool! listen to this long and helpful explanation to convince you to use this publisher foreverrrr"</p>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            A VERY ecstatic author <cite title="Source Title">Beverly Bob</cite>
           </figcaption>
         </figure>
       </div>
@@ -227,15 +255,98 @@
 <!-- SIGN UP -->
   <div class="container">
     <div class="row">
-      <div class="col text-center">
+      <div class="col text-center mt-5">
         <h1>Sign up for emails!</h1>
       </div>
     </div>
     <div class="row">
       <div class="col">
-        <p>Want to be notified for challenges, special deals, and book recommendations? Fill out the form below!</p>
+        <p class="fs-5 text-center">Want to be notified for challenges, special deals, and book recommendations? Fill out the form below!</p>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-6">
         <form>
-
+          <fieldset>
+            <div id="closeText" class="form-group">
+              <label for="inputEmail" class="form-label mt-4 fs-5">Email address</label>
+              <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="notification" class="form-label mt-4 fs-5">How often would you like to be notified for recommendations?</label>
+              <select class="form-select" id="exampleSelect1">
+                <option>1 week</option>
+                <option>2 weeks</option>
+                <option>3 weeks</option>
+                <option>4 weeks</option>
+              </select>
+              <small id="emailHelp" class="form-text text-muted">Challenges and voting forms will be emailed at the end of every month.</small>
+            </div>
+            <fieldset class="form-group">
+              <legend class="mt-4 fs-5">What genres do you want recommended?</legend>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="classicLit">
+                <label class="form-check-label" for="classicLit">
+                  Classic Literature
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="fantasy">
+                <label class="form-check-label" for="fantasy">
+                  Fantasy
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="history">
+                <label class="form-check-label" for="history">
+                  History
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="horror">
+                <label class="form-check-label" for="horror">
+                  Horror
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="mystery">
+                <label class="form-check-label" for="mystery">
+                  Mystery
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="nonfiction">
+                <label class="form-check-label" for="nonfiction">
+                  Nonfiction
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="romance">
+                <label class="form-check-label" for="romance">
+                  Romance
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="scienceFiction">
+                <label class="form-check-label" for="scienceFiction">
+                  Science Fiction
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="thriller">
+                <label class="form-check-label" for="thriller">
+                  Thriller
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="yaFiction">
+                <label class="form-check-label" for="yaFiction">
+                  Young Adult Fiction
+                </label>
+              </div>
+            </fieldset>
+            <button type="submit" class="btn btn-primary mb-5">Submit</button>
+          </fieldset>
         </form>
       </div>
     </div>
@@ -244,6 +355,3 @@
 </body>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </html>
-<!-- DELETE BOOTSTRAP.MIN.CSS -->
-<!-- JUST REDO THE PAGE AND COPY PASTE AND SEE HOW IT GOES -->
-<!-- ID="namethingy" -->
