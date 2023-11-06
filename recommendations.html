@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Books to Book</title>
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="books.css"/>
 </head>
 <body>
   
 <!-- NAVIGATION -->
-  <nav id="navBar" class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark" style="position: sticky; top: 1px;">
+  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">Books to Book</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,11 +18,6 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarColor01">
         <ul class="navbar-nav me-auto">
-          <!-- <li class="nav-item">
-            <a class="nav-link active" href="index.html">Home
-              <span class="visually-hidden">(current)</span>
-            </a>
-          </li> -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="recommendations.html" role="button" aria-haspopup="true" aria-expanded="false">Recommendations</a>
             <div class="dropdown-menu">
@@ -37,10 +33,13 @@
               <a class="dropdown-item" href="#">Young Adult Fiction</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="localWriters.html">Local Writers</a>
+            <a class="nav-link" href="mpChallenge.html">Monthly Prompt Challenge</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="events.html">Events and Challenges</a>
+            <a class="nav-link" href="challenges.html">Challenges</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="community.html">Community</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="publishers.html">Publishers</a>
@@ -51,7 +50,7 @@
   </nav>
 
 <!-- CLASSIC LITERATURE -->
-  <div class="container">
+  <div id="scrollTop" class="container">
     <div class="row">
       <div class="col">
         <h1>Classic Literature</h1>
@@ -59,7 +58,7 @@
     </div>
     <!-- BOOK 1 -->
     <div class="row">
-      <div class="card col-lg-6">
+      <div id="lowIndex" class="card col-lg-6">
         <div class="row">
           <div class="col-sm-3">
             <img class="my-2 mr-3" style="max-height: 200px;" src="images/theShining.jpg" alt="book1 description"/>
@@ -123,7 +122,7 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <h1>Fantasy</h1>
+        <h1 id="fantasy">Fantasy</h1>
       </div>
     </div>
     <!-- BOOK 1 -->
@@ -671,7 +670,105 @@
     </div>
   </div>
 
-
+<!-- SIGN UP -->
+  <div class="container">
+    <div class="row">
+      <div class="col text-center mt-5">
+        <h1>Sign up for emails!</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p class="fs-5 text-center">Want to be notified for challenges, special deals, and book recommendations? Fill out the form below!</p>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-6">
+        <form>
+          <fieldset>
+            <div id="closeText" class="form-group">
+              <label for="inputEmail" class="form-label mt-4 fs-5">Email address</label>
+              <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="notification" class="form-label mt-4 fs-5">How often would you like to be notified for recommendations?</label>
+              <select class="form-select" id="exampleSelect1">
+                <option>1 week</option>
+                <option>2 weeks</option>
+                <option>3 weeks</option>
+                <option>4 weeks</option>
+              </select>
+              <small id="emailHelp" class="form-text text-muted">Challenges and voting forms will be emailed at the end of every month.</small>
+            </div>
+            <fieldset class="form-group">
+              <legend class="mt-4 fs-5">What genres do you want recommended?</legend>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="classicLit">
+                <label class="form-check-label" for="classicLit">
+                  Classic Literature
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="fantasy">
+                <label class="form-check-label" for="fantasy">
+                  Fantasy
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="history">
+                <label class="form-check-label" for="history">
+                  History
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="horror">
+                <label class="form-check-label" for="horror">
+                  Horror
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="mystery">
+                <label class="form-check-label" for="mystery">
+                  Mystery
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="nonfiction">
+                <label class="form-check-label" for="nonfiction">
+                  Nonfiction
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="romance">
+                <label class="form-check-label" for="romance">
+                  Romance
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="scienceFiction">
+                <label class="form-check-label" for="scienceFiction">
+                  Science Fiction
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="thriller">
+                <label class="form-check-label" for="thriller">
+                  Thriller
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="yaFiction">
+                <label class="form-check-label" for="yaFiction">
+                  Young Adult Fiction
+                </label>
+              </div>
+            </fieldset>
+            <button type="submit" class="btn btn-primary mb-5">Submit</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
 
 </body>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
